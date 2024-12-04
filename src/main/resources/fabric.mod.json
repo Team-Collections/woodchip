@@ -1,0 +1,59 @@
+{
+	"schemaVersion": 1,
+	"version": "${version}",
+
+	"id": "template",
+	"name": "Template",
+	"description": "Template description...",
+	"license": "CC0-1.0",
+	"icon": "assets/template/icon.png",
+
+	"authors": [
+		"Trigam",
+		"Spook Lass"
+	],
+
+	"contact": {
+		"homepage": "https://collections.trigam.dev/",
+		"sources": "https://github.com/Team-Collections/template",
+		"issues": "https://github.com/Team-Collections/template/issues"
+	},
+
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.github_releases": "https://github.com/Team-Collections/template/releases",
+				"modmenu.discord": "https://discord.com/invite/KxYudA7Grx"
+			},
+
+			"parent": {
+				"id": "collections",
+				"name": "Collections",
+				"description": "A collection of vanilla-style mods, aiming to enhance, rework, and expand upon the vanilla game!",
+				"icon": "assets/template/collections-icon.png"
+			},
+
+			"update_checker": true
+		}
+	},
+
+	"environment": "*",
+	"entrypoints": {
+		"main": [ "dev.trigam.template.Template" ],
+		"client": [ "dev.trigam.template.TemplateClient" ],
+		"fabric-datagen": [ "dev.trigam.template.TemplateDataGenerator" ]
+	},
+
+	"mixins": [
+		"template.mixins.json",
+		{ "config": "template.client.mixins.json", "environment": "client" }
+	],
+
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {}
+}
