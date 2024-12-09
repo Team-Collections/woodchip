@@ -1,0 +1,17 @@
+{
+	"type": "woodchip:stripping",
+	"pools": [{
+		"entries": [{
+			"type": "minecraft:item",
+			"name": "woodchip:mangrove_bark",
+			"functions": [{
+				"function": "minecraft:set_count",
+				"count": 1.0,
+				"add": false
+			}]
+		}],
+		"rolls": 1.0,
+		"bonus_rolls": 0.0
+	}],
+	"random_sequence": "woodchip:stripping/mangrove_log"
+}

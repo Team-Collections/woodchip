@@ -21,16 +21,14 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"template" {
+		"woodchip" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
 	}
 
-}
+	accessWidenerPath = file( "src/main/resources/woodchip.accessWidener" )
 
-fabricApi {
-	configureDataGeneration()
 }
 
 dependencies {

@@ -1,0 +1,5 @@
+accessWidener v2 named
+
+accessible method net/minecraft/loot/LootTables register (Ljava/lang/String;)Lnet/minecraft/registry/RegistryKey;
+accessible method net/minecraft/loot/LootTables registerLootTable (Lnet/minecraft/registry/RegistryKey;)Lnet/minecraft/registry/RegistryKey;
+accessible method net/minecraft/loot/context/LootContextTypes register (Ljava/lang/String;Ljava/util/function/Consumer;)Lnet/minecraft/util/context/ContextType;

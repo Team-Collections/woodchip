@@ -1,8 +1,8 @@
 {
 	"required": true,
-	"package": "dev.trigam.template.mixin",
+	"package": "dev.trigam.woodchip.mixin.client",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
+	"client": [
 
 	],
 	"injectors": {

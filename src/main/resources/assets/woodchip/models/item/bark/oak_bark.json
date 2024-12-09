@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "woodchip:item/bark/oak_bark"
+	}
+}

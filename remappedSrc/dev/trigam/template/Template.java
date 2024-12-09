@@ -1,4 +1,4 @@
-package dev.trigam.template;
+package dev.trigam.woodchip;
 
 import net.fabricmc.api.ModInitializer;
 

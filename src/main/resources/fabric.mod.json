@@ -2,11 +2,11 @@
 	"schemaVersion": 1,
 	"version": "${version}",
 
-	"id": "template",
-	"name": "Template",
-	"description": "Template description...",
+	"id": "woodchip",
+	"name": "Woodchip",
+	"description": "Fills in the gaps in wood sets, adds new wood variants, and other wood-related features",
 	"license": "CC0-1.0",
-	"icon": "assets/template/icon.png",
+	"icon": "assets/woodchip/icon.png",
 
 	"authors": [
 		"Trigam",
@@ -14,15 +14,15 @@
 	],
 
 	"contact": {
-		"homepage": "https://collections.trigam.dev/",
-		"sources": "https://github.com/Team-Collections/template",
-		"issues": "https://github.com/Team-Collections/template/issues"
+		"homepage": "https://collections.trigam.dev/woodchip",
+		"sources": "https://github.com/Team-Collections/woodchip",
+		"issues": "https://github.com/Team-Collections/woodchip/issues"
 	},
 
 	"custom": {
 		"modmenu": {
 			"links": {
-				"modmenu.github_releases": "https://github.com/Team-Collections/template/releases",
+				"modmenu.github_releases": "https://github.com/Team-Collections/woodchip/releases",
 				"modmenu.discord": "https://discord.com/invite/KxYudA7Grx"
 			},
 
@@ -30,7 +30,7 @@
 				"id": "collections",
 				"name": "Collections",
 				"description": "A collection of vanilla-style mods, aiming to enhance, rework, and expand upon the vanilla game!",
-				"icon": "assets/template/collections-icon.png"
+				"icon": "assets/woodchip/collections-icon.png"
 			},
 
 			"update_checker": true
@@ -39,15 +39,16 @@
 
 	"environment": "*",
 	"entrypoints": {
-		"main": [ "dev.trigam.template.Template" ],
-		"client": [ "dev.trigam.template.TemplateClient" ],
-		"fabric-datagen": [ "dev.trigam.template.TemplateDataGenerator" ]
+		"main": [ "dev.trigam.woodchip.Woodchip" ],
+		"client": [ "dev.trigam.woodchip.WoodchipClient" ]
 	},
 
 	"mixins": [
-		"template.mixins.json",
-		{ "config": "template.client.mixins.json", "environment": "client" }
+		"woodchip.mixins.json",
+		{ "config": "woodchip.client.mixins.json", "environment": "client" }
 	],
+
+	"accessWidener": "woodchip.accessWidener",
 
 	"depends": {
 		"fabricloader": ">=0.16.9",

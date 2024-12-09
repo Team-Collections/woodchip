@@ -1,0 +1,34 @@
+{
+	"parent": "minecraft:recipes/root",
+
+	"requirements": [
+		[
+			"has_bark",
+			"has_the_recipe"
+		]
+	],
+
+	"rewards": {
+		"recipes": [ "woodchip:oak_wood_from_bark" ]
+	},
+
+	"criteria": {
+		"has_bark": {
+			"trigger": "minecraft:inventory_changed",
+
+			"conditions": {
+				"items": [
+					{ "items": "woodchip:oak_bark" }
+				]
+			}
+		},
+
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			
+			"conditions": {
+				"recipe": "minecraft:oak_wood"
+			}
+		}
+	}
+}
